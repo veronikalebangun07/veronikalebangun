@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Example</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    
+    body {
+      background-color: #f8f9fa;
+    }
+    .container {
+        background: url(background\ komputer.jpg);
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(200, 20, 20, 0.1);
+    }
+    h2 {
+      color: #343a40;
+      margin-bottom: 20px;
+    }
+    .form-control {
+      border-radius: 5px;
+    }
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+    .btn-primary:hover {
+      background-color: #0056b3;
+      border-color: #004085;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="nama">Nama</label>
+              <input type="text" class="form-control" id="nama" placeholder="Nama">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="marga">Marga</label>
+              <input type="text" class="form-control" id="marga" placeholder="Marga">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="nim">NIM</label>
+            <input type="text" class="form-control" id="nim" placeholder="NIM">
+          </div>
+          <div class="form-group">
+            <label for="jenisKelamin">Jenis Kelamin</label>
+            <div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="jenisKelamin" id="jenisKelaminL" value="L">
+                <label class="form-check-label" for="jenisKelaminL">L</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="jenisKelamin" id="jenisKelaminP" value="P">
+                <label class="form-check-label" for="jenisKelaminP">P</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="ttl">TTL</label>
+            <input type="date" class="form-control" id="ttl">
+          </div>
+          <div class="form-group">
+            <label for="jurusan">Jurusan yang dipilih</label>
+            <select id="jurusan" class="form-control">
+              <option selected>Pilih...</option>
+              <option value="Manajemen Informatika">Manajemen Informatika</option>
+              <option value="Teknik Listrik">Teknik Listrik</option>
+              <option value="Teknik Mesin">Teknik Mesin</option>
+              <option value="Teknik Sipil">Teknik Sipil</option>
+              <option value="Agroindustri">Agroindustri</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="alamat">Alamat</label>
+            <input type="text" class="form-control" id="alamat" placeholder="Alamat">
+          </div>
+          <div class="form-group">
+            <label for="hobby">Hobby</label>
+            <div id="hobbyContainer">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="hobby1" name="hobby" value="Reading">
+                <label class="form-check-label" for="hobby1">Membaca</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="hobby2" name="hobby" value="Fishing">
+                <label class="form-check-label" for="hobby2">memancing</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="hobby3" name="hobby" value="Gardening">
+                <label class="form-check-label" for="hobby3">Berkebun</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="hobby4" name="hobby" value="Singing">
+                <label class="form-check-label" for="hobby4">Menyanyi</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="hobby5" name="hobby" value="Swimming">
+                <label class="form-check-label" for="hobby5">Berenang</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="asalSekolah">Asal Sekolah</label>
+            <input type="text" class="form-control" id="asalSekolah" placeholder="Asal Sekolah">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Email">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
